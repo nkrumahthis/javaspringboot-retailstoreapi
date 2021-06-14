@@ -8,7 +8,7 @@ public abstract class User {
         setDiscount(discount);
     }
 
-    private void setDiscount(double discount){
+    protected void setDiscount(double discount){
         this.discount = discount;
     }
 
