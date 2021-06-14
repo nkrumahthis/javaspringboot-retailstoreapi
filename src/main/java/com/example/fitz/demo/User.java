@@ -1,10 +1,14 @@
 package com.example.fitz.demo;
 
-public class User {
+public abstract class User {
 
     private double discount = 0;
 
-    public void setDiscount(double discount){
+    protected User(double discount){
+        setDiscount(discount);
+    }
+
+    private void setDiscount(double discount){
         this.discount = discount;
     }
 
