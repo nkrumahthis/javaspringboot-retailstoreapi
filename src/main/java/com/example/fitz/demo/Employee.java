@@ -2,7 +2,7 @@ package com.example.fitz.demo;
 
 public class Employee extends User{
 
-    protected Employee() {
+    public Employee() {
         super(0.3);
     }
 
