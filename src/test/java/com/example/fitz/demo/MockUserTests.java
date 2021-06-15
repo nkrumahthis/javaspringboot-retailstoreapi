@@ -31,5 +31,22 @@ public class MockUserTests {
         assertEquals(70, user.getNetPayableAmount(100), "net payable amount calculation should be accurate");
     }
 
+
+    @Test
+    @DisplayName("100$ discounts")
+    public void testHundredDollarDiscount(){
+        user.setDiscount(0);
+        assertEquals(261, user.getNetPayableAmount(271), "hundred dollar discount test should be accurate");
+    }
+
+    @Test
+    @DisplayName("100$")
+    public void testHundred(){
+        user.setDiscount(0);
+        assertEquals(95, user.getNetPayableAmount(100), "hundred dollar discount test should be accurate");
+    }
+
+
+
     
 }
